@@ -18,6 +18,7 @@ mongoose
   .catch((err) => console.log(err));
 
 //  routes
+app.get("/api", () => console.log("hello"));
 app.use("/api/properties", propertyRoutes);
 
 export default app;
